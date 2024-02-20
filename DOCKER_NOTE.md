@@ -1,5 +1,11 @@
 # Docker Note
 
+## Image
+```shell
+# 列出所有未被使用的镜像
+
+```
+
 ## Volume
 ```shell
 # 列出所有未被容器使用的 Volume

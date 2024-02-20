@@ -1,2 +1,3 @@
+# redpanda
 
-https://github.com/redpanda-data/console/blob/master/docs/local/docker-compose.yaml
+doc: https://github.com/redpanda-data/console/blob/master/docs/README.md
