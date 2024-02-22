@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  elasticsearch:
+    image: docker.io/bitnami/elasticsearch:7.14.2
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    volumes:
+      - 'elasticsearch_data:/bitnami/elasticsearch/data'
+    environment:
+      - discovery.type=single-node
+volumes:
+  elasticsearch_data:
+    driver: local

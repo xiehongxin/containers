@@ -2,7 +2,10 @@
 
 ## Image
 ```shell
-# 列出所有未被使用的镜像
+# https://docs.docker.com/config/pruning/
+# To remove all images which aren't used by existing containers, use the -a flag:
+# 清除未被使用的镜像
+$ docker image prune -a
 
 ```
 
