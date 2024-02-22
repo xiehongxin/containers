@@ -1,0 +1,24 @@
+# From https://www.jianshu.com/p/9577cc9e8468
+
+version: '3.8'
+
+services:
+  mysql:
+    image: docker.io/bitnami/mysql:5.7.36
+    ports:
+      - '3306:3306'
+    volumes:
+      - 'mysql57_data:/bitnami/mysql/data'
+#    restart: always
+#    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+#      - ALLOW_EMPTY_PASSWORD=yes
+      - BITNAMI_DEBUG=true
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_CHARACTER_SET=utf8mb4
+      - MYSQL_COLLATE=utf8mb4_general_ci
+
+volumes:
+  mysql57_data:
+    driver: local
