@@ -1,0 +1,11 @@
+# From https://redis.io/docs/install/install-stack/docker/
+
+# docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
+
+version: '2'
+
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    ports:
+      - '6359:6379'
