@@ -14,6 +14,9 @@ $ docker volume ls -qf dangling=true
 # 删除这些未被使用的 Volume
 $ docker volume rm $(docker volume ls -qf dangling=true)
 
+# Volume迁移
+https://sealhuang.github.io/migrate-docker-volume-from-one-host-to-another
+
 ```
 
 ## Registry
