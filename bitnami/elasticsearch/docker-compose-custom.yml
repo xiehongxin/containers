@@ -6,6 +6,7 @@ services:
     ports:
       - '9200:9200'
       - '9300:9300'
+    # TODO: elasticsearch/plugins/analysis-ik
     volumes:
       - 'elasticsearch_data:/bitnami/elasticsearch/data'
     environment:
