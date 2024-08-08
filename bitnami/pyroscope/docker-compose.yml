@@ -1,0 +1,9 @@
+version: "2.0"
+
+services:
+  pyroscope:
+    image: grafana/pyroscope:latest
+    ports:
+      - "4040:4040"
+    hostname: pyroscope-server
+    restart: unless-stopped
